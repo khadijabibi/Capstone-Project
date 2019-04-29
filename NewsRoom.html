@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>News Room</title>
+<!-- Stylesheet-->
+<link rel="styleSheet" type="text/css" href="StyleSheet.css">
+<!-- Top Banner-->
+<img class="Banner" src="Images/Banner.png"/>
+<!-- Company Logo-->	
+<div class="Header">
+	<img class="Logo" src="Images/Logo.png"  height="110px" width="150px"/><b><i>"All Things Pacifica"</i></b>
+</div>
+<!-- Navigation Bar-->
+<div class="navbar">
+	<div class="navbarleft">
+	  <a href="Home.html">Home</a>
+	  <a href="Products.html">Products</a>
+	  <a href="OurStory.html">Our Story</a>
+	  <a href="NewsRoom.html" class="navactive">News Room</a>
+	  <a href="Contact.html">Contact</a>
+	</div>
+	<div class="dropdown">
+		<button class="dropbtn"><img src="Images/Account.png" width="25" height="25" align="middle" /> Welcome, Penny!</button>
+		<div class="dropdown-content">
+		  <a href="MyAccount.html">My Account</a>
+		  <a href="OrderHistory.html">Order History</a>
+		  <a href="Home.html">Logout</a>
+		</div>
+	</div> 
+	<div class="Cartdropdown">
+		<button class="Cartdropbtn"><img src="Images/Cart.png" width="25" height="25" align="middle" /> 0 Items = $0.00</button>
+		<div class="Cartdropdown-content">
+			<a><img src="Images/Cushion.png"height="35px;" width="48px" />&nbsp; Strawberry Fair &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 X NZ$000.00 
+				<img src="Images/x.png"height="20px;" width="22px" />
+				<hr></hr>
+				<b>Subtotal: $000.00</b><button class= "button" onclick="myFunction()">Checkout</button>
+			</a>     
+		</div>
+	</div> 
+</div>
+<script>
+function myFunction() {
+    window.open('http://localhost/ShoppingCart.html','_self');
+}
+</script>
+</head>
+<body>
+<div class="Newsrow">
+  <div style="width:60%;">
+    <div class="card">
+      <h2>Upcoming Workshop</h2>
+      <h4>Workshop Description, Dec 13, 2018</h4>
+      <img src="Images/workshop.png" >
+	  </br></br>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		Sed eleifend libero vitae dolor molestie elementum. 
+		Duis dolor turpis, pretium ut suscipit et, tincidunt sit amet risus. 
+		Vestibulum pretium in ante quis lacinia. Aliquam velit sapien, commodo nec 
+		varius vitae, porta a nisi.
+    </div>
+	<br/>	
+	<hr>
+    <div class="card">
+      <h2>Recent Workshop</h2>
+      <h4>Workshop Description, Sep 2, 2018</h4>   	  
+	  <img src="Images/workshop.png" >
+	  </br></br>
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		Sed eleifend libero vitae dolor molestie elementum. 
+		Duis dolor turpis, pretium ut suscipit et, tincidunt sit amet risus. 
+		Vestibulum pretium in ante quis lacinia. Aliquam velit sapien, commodo nec 
+		varius vitae, porta a nisi.
+    </div>
+  </div>
+  <div style="margin-top: 0.3%; width:30%; margin-left: 8%;">
+    <div class="card">
+      <h2>Blogs</h2>      
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+	  Sed eleifend libero vitae dolor molestie elementum. 
+	  Duis dolor turpis, pretium ut suscipit et, tincidunt sit amet risus.
+	  </br>
+	  </br>
+	  <a href="#">Read more</a>
+	  <hr>
+    </div>
+    <div class="card">
+      <h2>Gala</h2>
+      <a href="NewsRoom.html"><img src="Images/workshop.png" style="height:150px; width:145px;"></a> &nbsp; &nbsp; &nbsp; &nbsp;
+      <a href="NewsRoom.html"><img src="Images/workshop.png" style="height:150px; width:145px;"></a>&nbsp;&nbsp;
+      <br/>
+	  <br/>
+	  <hr>
+    </div>
+    <div class="card">
+	<h2>Archives</h2>
+		<button class="NewsRoomArchives">September 2018</button>
+		<div class="panel">
+		  <ul class="ArcList">
+			<li class="ArcBar"><a href="">21-09-18</a></li>
+			<li class="ArcBar"><a href="">10-09-18</a></li>				
+			<li class="ArcBar"><a href="">09-09-18</a></li>				
+		</ul>
+		</div>
+		<button class="NewsRoomArchives">August 2018</button>
+		<div class="panel">
+		  <ul class="ArcList">
+			<li class="ArcBar"><a href="">21-08-18</a></li>
+			<li class="ArcBar"><a href="">10-08-18</a></li>							
+		</ul>
+		</div>
+		<button class="NewsRoomArchives">July 2018</button>
+		<div class="panel">
+		  <ul class="ArcList">
+			<li class="ArcBar"><a href="">11-07-18</a></li>
+			<li class="ArcBar"><a href="">10-07-18</a></li>							
+		</ul>
+		</div>
+      
+    </div>
+  </div>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("NewsRoomArchives");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+</script>
+
+
+
+
+<!--Footer of the Page -->
+<footer>
+<div class="Footer">
+<!-- Quick Links in Footer-->
+	<ul class="FooterLinks">
+		<li class="FooterTitle"><u>Quick Links</u></li> 
+		<li class="FooterList"><a target="_blank" href ="https://thecolourcloset.com/">Colour Closet</a></li> 
+		<li class="FooterFollow"><u>Follow Us</u></li> 		
+		<li class="FooterList"><a target="_blank" href="https://www.samsarthouse.co.nz/">Sam's Art House</a></li>
+		<li class="FooterListRight"><a href="mailto:test@gmail.com"><img src="Images/Email.png" height="25px;" width="35px"/></a> 
+		<li class="FooterListRight"><a target="_blank" href="https://www.instagram.com/bluebellclub/"><img src="Images/Instagram.png" height="25px;" width="30px"/></a></li> 
+		<li class="FooterListRight"><a target="_blank" href="https://www.facebook.com/Blue-Bell-Club-1427527737474227/"><img src="Images/Facebook.png" height="25px;" width="30px"/></a></li>
+		<li class="FooterList"><a href="Unsubscribe.html">Unsubscribe</a></li>
+		<li class="FooterList"><a href="TermsAndConditions.html">Terms & Conditions</a></li>
+	</ul>
+<!--Copyright details-->	
+	<div class="Copyright">
+		Copyright 2018
+	</div>
+<!--Bottom Banner--> 
+	<img class="Banner" src="Images/Banner.png"/>	
+</div>
+</footer>
+</body>
+</html>

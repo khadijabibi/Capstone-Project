@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Strawberry Fair</title>
+<!-- Stylesheet-->
+<link rel="styleSheet" type="text/css" href="StyleSheet.css">
+<!-- Top Banner-->
+<img class="Banner" src="Images/Banner.png"/>
+<!-- Company Logo-->	
+<div class="Header">
+	<img class="Logo" src="Images/Logo.png"  height="110px" width="150px"/><b><i>"All Things Pacifica"</i></b>
+</div>
+<!-- Navigation Bar-->
+<div class="navbar">
+	<div class="navbarleft">
+	  <a href="Home.html">Home</a>
+	  <a href="Products.html" class="navactive">Products</a>
+	  <a href="OurStory.html">Our Story</a>
+	  <a href="NewsRoom.html">News Room</a>
+	  <a href="Contact.html">Contact</a>
+	</div>
+	<div class="dropdown">
+		<button class="dropbtn"><img src="Images/Account.png" width="25" height="25" align="middle" /> Welcome, Penny!</button>
+		<div class="dropdown-content">
+		  <a href="MyAccount.html">My Account</a>
+		  <a href="OrderHistory.html">Order History</a>
+		  <a href="Home.html">Logout</a>
+		</div>
+	</div> 
+	<div class="Cartdropdown">
+		<button class="Cartdropbtn"><img src="Images/Cart.png" width="25" height="25" align="middle" /> 0 Items = $0.00</button>
+		<div class="Cartdropdown-content">
+			<a><img src="Images/Cushion.png"height="35px;" width="48px" />&nbsp; Strawberry Fair &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 X NZ$000.00 
+				<img src="Images/x.png"height="20px;" width="22px" />
+				<hr></hr>
+				<b>Subtotal: $000.00</b><button class= "button" onclick="myFunction()">Checkout</button>
+			</a>     
+		</div>
+	</div> 
+</div>
+<script>
+function myFunction() {
+    window.open('http://localhost/ShoppingCart.html','_self');
+}
+</script>
+</head>
+<body>
+<!--This div is for products categories located in left side -->
+<div class= "IndProduct">
+<!-- Categories on the left side of the screen-->
+<div class="Categories">
+	<h3>Categories</h3>
+	<button class="accordion" style="color: green;">Cushions</button>
+	<div class="panel">
+	  <ul class="CatList">
+		<li class="CatBar"><a href="" style="color: green;">Round</a></li>
+		<li class="CatBar"><a href="">Square</a></li>
+			<ul class="CatList">
+				<li class="CatBar"><a href="">Little Darling</a></li>
+			</ul>
+		<li class="CatBar"><a href="">Rectangle</a></li>
+		<li class="CatBar"><a href="">Pirate</a></li>		
+	</ul>
+	</div>
+
+	<a href="Products.html"><button class="accordiondiff">Applique Artworks</button></a>
+	<div class="panel">
+	  
+	</div>
+
+	<button class="accordion">Tivaevae</button>
+	<div class="panel">
+		<ul class="CatList">
+			<li class="CatBar"><a href="">Throws</a></li>
+			<li class="CatBar"><a href="">Bed Sets</a></li>			
+			<li class="CatBar"><a href="">Cushion Sets</a></li>				
+		</ul>
+	</div>
+	
+	<button class="accordion">Homeware & Accessories</button>
+	<div class="panel">
+		<ul class="CatList">
+			<li class="CatBar"><a href="">Bowls</a></li>
+			<li class="CatBar"><a href="">Mats</a></li>			
+			<li class="CatBar"><a href="">Place-mat Sets</a></li>
+			<li class="CatBar"><a href="">Bed Throws</a></li>
+			<li class="CatBar"><a href="">Lamps</a></li>	
+			<ul class="CatList">
+					<li class="CatBar"><a href="">Standard</a></li>
+					<li class="CatBar"><a href="">Bedside</a></li>
+			</ul>				
+			<li class="CatBar"><a href="">Jewelery</a></li>
+			<li class="CatBar"><a href="">Wreaths</a></li>
+			<li class="CatBar"><a href="">Head Lei</a></li>			
+			<li class="CatBar"><a href="">Door Stoppers</a></li>
+			<li class="CatBar"><a href="">Shell Mirrors</a></li>
+			<li class="CatBar"><a href="">Hand Fans</a></li>			
+			<li class="CatBar"><a href="">Chairs</a></li>
+			<li class="CatBar"><a href="">Buntings</a></li>
+		</ul>
+	</div>
+	
+	<button class="accordion">Pots</button>
+	<div class="panel">
+		<ul class="CatList">
+			<li class="CatBar"><a href="">Ceramic Mosaic Pots</a></li>
+				<ul class="CatList">
+					<li class="CatBar"><a href="">Round</a></li>
+					<li class="CatBar"><a href="">Square</a></li>
+				</ul>
+			<li class="CatBar"><a href="">Pot Holders</a></li>						
+		</ul>
+	</div>
+	  
+</div>
+   
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+</script>
+
+<div class="IndProductDetails">
+<!--This div is for product navigation -->
+	<h3><a class="Breadcrumbs" href="Products.html">Products</a> > <a class="Breadcrumbs" href="Products.html">Cushions</a> > <a class="Breadcrumbs" href="Products.html">Round</a> > <a class="Breadcrumbs" href="IndividualProduct.html">Strawberry Fair</a></h3>	 
+   <!--This div is for product image located in the left side corner including the text below -->
+	<div class="productcushionleft">	
+	<img id="myImg" src="Images/Cushion.png" height="225" width="350"/>
+	</div> 	
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+	  <span class="close">&times;</span>
+	  <img class="modal-content" id="img01">
+	  <div id="caption"></div>
+	</div>	
+		<b style="margin-left:27%;">Click to enlarge</b>		
+		<div class="productthumbnail">
+      <div class="frontcolumn">
+	  <!-- The two columns for product front and back-->
+	  <br/>
+    <img class= "frontproduct" src="Images/frontproduct.jpeg" height="20%;" style="width:20%;"onclick="myFunction(this);">
+	 <img class= "frontproduct"src="Images/backproduct.jpeg"  height="20%;" style="width:20%;" onclick="myFunction(this);">
+    </br></br>
+	
+	</div>
+	</br></br>
+		
+	  </div>  
+	 
+	 <a class= "CShopping"href="Products.html" style="padding-left: 20px;"> Continue Shopping</a>
+	</div>  
+
+
+ 
+ <script>
+function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+}
+</script>
+ 
+ 
+ 
+ <script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+  <!--This div is for product description --> 
+<div class="productdescription">
+<br>
+  <table class= "prodinfo">
+  <tr>
+		<td><h3>Strawberry Fair</h3></td>
+  </tr>
+  <tr>
+	   <td >$XXX.XX <img class="Rating" src="Images/StarRating.png" height="20px" width="190px" style="padding-left: 90px;"/></td>
+	</tr>
+	<tr>
+	   <td>Quantity:  <input type="number" min="1" max="10" value="1">&nbsp;<button class= "button" >Add to Cart</button></td>
+	</tr>
+	<tr>
+	   <td><b><i>XX Available</i></b></td>  
+	</tr>
+	<tr>
+	   <td><b>Product Dimensions:</b>  xxcm X xxcm</td>	   
+	</tr>
+	<tr>
+	</tr>
+	<tr>
+		<td><b>Product Description</b></td>
+	</tr>
+	<tr>
+		<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat risus sit amet hendrerit scelerisque. Mauris nec mattis dui. Etiam vel mattis erat. In at libero ac nibh cursus egestas.<br></br>
+    Duis id lectus nec felis tempus sagittis. Ut consequat lectus eu odio posuere, id venenatis tortor venenatis. Integer varius ornare elit, volutpat gravida turpis sagittis id. Suspendisse sed laoreet dui.
+  </td>
+	</tr>
+	 <!--social media links including the Share this item text--> 
+		<tr class="IndProdRight">
+			<td> <b>Share this item: </b></td>
+			<td> <a target="_blank" href="https://www.facebook.com/Blue-Bell-Club-1427527737474227/"><img src="Images/Facebook.png" height="25px;" width="30px"/></a></td>
+			<td><a target="_blank" href="https://www.instagram.com/bluebellclub/"><img src="Images/Instagram.png" height="25px;" width="30px"/></a> </td>		
+			<td> <a href="mailto:test@gmail.com"><img src="Images/Email.png" height="25px;" width="35px"/></a></td>
+		</tr>
+		
+    </table>
+	</br>
+</div>
+ </div>
+ 
+ <!--Footer of the Page -->
+<footer>
+<div class="Footer">
+<!-- Quick Links in Footer-->
+	<ul class="FooterLinks">
+		<li class="FooterTitle"><u>Quick Links</u></li> 
+		<li class="FooterList"><a target="_blank" href ="https://thecolourcloset.com/">Colour Closet</a></li> 
+		<li class="FooterFollow"><u>Follow Us</u></li> 		
+		<li class="FooterList"><a target="_blank" href="https://www.samsarthouse.co.nz/">Sam's Art House</a></li>
+		<li class="FooterListRight"><a href="mailto:test@gmail.com"><img src="Images/Email.png" height="25px;" width="35px"/></a> 
+		<li class="FooterListRight"><a target="_blank" href="https://www.instagram.com/bluebellclub/"><img src="Images/Instagram.png" height="25px;" width="30px"/></a></li> 
+		<li class="FooterListRight"><a target="_blank" href="https://www.facebook.com/Blue-Bell-Club-1427527737474227/"><img src="Images/Facebook.png" height="25px;" width="30px"/></a></li>
+		<li class="FooterList"><a href="Unsubscribe.html">Unsubscribe</a></li>
+		<li class="FooterList"><a href="TermsAndConditions.html">Terms & Conditions</a></li>
+	</ul>
+<!--Copyright details-->	
+	<div class="Copyright">
+		Copyright 2018
+	</div>
+<!--Bottom Banner--> 
+	<img class="Banner" src="Images/Banner.png"/>	
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Account</title>
+<!-- Stylesheet-->
+<link rel="styleSheet" type="text/css" href="StyleSheet.css">
+<!-- Top Banner-->
+<img class="Banner" src="Images/Banner.png"/>
+<!-- Company Logo-->	
+<div class="Header">
+	<img class="Logo" src="Images/Logo.png"  height="110px" width="150px"/><b><i>"All Things Pacifica"</i></b>
+</div>
+<!-- Navigation Bar-->
+<div class="navbar">
+	<div class="navbarleft">
+	  <a href="Home.html">Home</a>
+	  <a href="Products.html">Products</a>
+	  <a href="OurStory.html">Our Story</a>
+	  <a href="NewsRoom.html">News Room</a>
+	  <a href="Contact.html">Contact</a>
+	</div>
+	<div class="dropdown">
+		<button class="dropbtn"><img src="Images/Account.png" width="25" height="25" align="middle" /> Welcome, Penny!</button>
+		<div class="dropdown-content">
+		  <a href="MyAccount.html" style="color: green;">My Account</a>
+		  <a href="OrderHistory.html">Order History</a>
+		  <a href="Home.html">Logout</a>
+		</div>
+	</div> 
+	<div class="Cartdropdown">
+		<button class="Cartdropbtn"><img src="Images/Cart.png" width="25" height="25" align="middle" /> 0 Items = $0.00</button>
+		<div class="Cartdropdown-content">
+			<a><img src="Images/Cushion.png"height="35px;" width="48px" />&nbsp; Strawberry Fair &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 X NZ$000.00 
+				<img src="Images/x.png"height="20px;" width="22px" />
+				<hr></hr>
+				<b>Subtotal: $000.00</b><button class= "button" onclick="myFunction()">Checkout</button>
+			</a>     
+		</div>
+	</div> 
+</div>
+<script>
+function myFunction() {
+    window.open('http://localhost/ShoppingCart.html','_self');
+}
+</script>
+</head>
+
+<body>
+
+<!--This div is floating left with personal details-->
+<div class="AccountRow">
+	<div class="PD-Left">
+	<h1 style="padding-left: 10px;">My Account</h1>
+		<table class="AccDetails">
+			<tr>
+				<td><b>First Name:</b></td>
+				<td>Penny</td>
+			</tr>
+			<tr>
+				<td><b>Last Name:</b></td>
+				<td>Nielsen</td>
+			</tr>
+			<tr>
+				<td><b>Email:</b></td>
+				<td>pennynielsen@gmail.com</td>
+			</tr>
+			<tr>
+				<td><b>Phone Number:</b></td>
+				<td>023 492 4748</td>
+			</tr>
+			<tr>
+				<td><b>Street Address:</b></td>
+				<td>56 Drivers Crescent</td>
+			</tr>
+			<tr>
+				<td><b>Suburb:</b></td>
+				<td>Cannons Creek</td>
+			</tr>
+			<tr>
+				<td><b>City:</b></td>
+				<td>Wellington</td>
+			</tr>
+			<tr>
+				<td><b>Post Code:</b></td>
+				<td>5698</td>
+			</tr>
+			<tr>
+				<td><b>Country:</b></td>
+				<td>New Zealand</td>
+			</tr>
+		</table>		
+	</div>	
+<!--This div is floating left with editing personal details features-->
+	<div class="PD-Left">
+		<h1>Change Password</h1>
+		<form action="">
+			<table>
+				<tr>
+					<td><b>Old Password:</b></td>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<td><b>New Password:</b></td>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<td><b>Confirm Password:</b></td>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<td><input class= "button" type="Submit" value="Update"></td>
+				</tr>
+			</table>		
+		</form>	
+		<br>
+		<hr></hr>
+		<br>	
+		<h1>Change Contact Details</h1>
+		<form action="">
+			<table>
+				<tr>
+					<td><b>Email:</b></td>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<td><b>Phone Number:</b></td>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<td><input class= "button" type="Submit" value="Update"></td>
+				</tr>
+			</table>				
+		</form> 	
+		<br>
+		<hr></hr>
+		<br>	
+		<h1>Change Billing Address</h1>
+		<form action="">
+			<table>
+				<tr>
+					<td><b>Street Address:</b></td>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<td><b>Suburb:</b></td>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<td><b>City:</b></td>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<td><b>Post Code:</b></td>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<td><b>Country:</b></td>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<td><input class= "button" type="Submit" value="Update"></td>
+				</tr>
+			</table>				
+		</form>	
+		<br>
+		<hr></hr>
+		<br>	
+		<h1>Change Subscription</h1>
+		<form action="">
+			<table>
+				<tr>				
+					<td><input type="checkbox">
+					<b>Subscribe</b></td>
+					<td><input type="checkbox">
+					<b>Unsubscribe</b></td>
+				</tr>			
+				<tr>
+					<td><input class= "button" type="Submit" value="Update"></td>
+				</tr>
+			</table>				
+		</form> 	
+	</div>
+</div>
+
+<!--Footer of the Page -->
+<footer>
+<div class="Footer">
+<!-- Quick Links in Footer-->
+	<ul class="FooterLinks">
+		<li class="FooterTitle"><u>Quick Links</u></li> 
+		<li class="FooterList"><a target="_blank" href ="https://thecolourcloset.com/">Colour Closet</a></li> 
+		<li class="FooterFollow"><u>Follow Us</u></li> 		
+		<li class="FooterList"><a target="_blank" href="https://www.samsarthouse.co.nz/">Sam's Art House</a></li>
+		<li class="FooterListRight"><a href="mailto:test@gmail.com"><img src="Images/Email.png" height="25px;" width="35px"/></a> 
+		<li class="FooterListRight"><a target="_blank" href="https://www.instagram.com/bluebellclub/"><img src="Images/Instagram.png" height="25px;" width="30px"/></a></li> 
+		<li class="FooterListRight"><a target="_blank" href="https://www.facebook.com/Blue-Bell-Club-1427527737474227/"><img src="Images/Facebook.png" height="25px;" width="30px"/></a></li>
+		<li class="FooterList"><a href="Unsubscribe.html">Unsubscribe</a></li>
+		<li class="FooterList"><a href="TermsAndConditions.html">Terms & Conditions</a></li>
+	</ul>
+<!--Copyright details-->	
+	<div class="Copyright">
+		Copyright 2018
+	</div>
+<!--Bottom Banner--> 
+	<img class="Banner" src="Images/Banner.png"/>	
+</div>
+</footer>
+</body>
+</html>

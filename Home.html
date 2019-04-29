@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<!-- Stylesheet-->
+<link rel="styleSheet" type="text/css" href="StyleSheet.css">
+<!-- Top Banner-->
+<img class="Banner" src="Images/Banner.png"/>
+<!-- Company Logo-->	
+<div class="Header">
+	<img class="Logo" src="Images/Logo.png"  height="110px" width="150px"/><b><i>"All Things Pacifica"</i></b>
+</div>
+<!-- Navigation Bar-->
+<div class="navbar">
+	<div class="navbarleft">
+	  <a href="Home.html" class="navactive">Home</a>
+	  <a href="Products.html">Products</a>
+	  <a href="OurStory.html">Our Story</a>
+	  <a href="NewsRoom.html">News Room</a>
+	  <a href="Contact.html">Contact</a>
+	</div>
+	<div class="dropdown">
+		<button class="dropbtn"><img src="Images/Account.png" width="25" height="25" align="middle" /> Welcome, Guest!</button>
+		<div class="dropdown-content">
+		  <a href="Login.html">Log In</a>
+		  <a href="Register.html">Register</a>
+		</div>
+	</div> 
+	<div class="Cartdropdown">
+		<button class="Cartdropbtn"><img src="Images/Cart.png" width="25" height="25" align="middle" /> 0 Items = $0.00</button>
+		<div class="Cartdropdown-content">
+			<a><img src="Images/Cushion.png"height="35px;" width="48px" />&nbsp; Strawberry Fair &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 X NZ$000.00 
+				<img src="Images/x.png"height="20px;" width="22px" />
+				<hr></hr>
+				<b>Subtotal: $000.00</b><button class="button" onclick="myFunction()">Checkout</button>
+			</a>     
+		</div>
+	</div> 
+</div>
+<script>
+function myFunction() {
+    window.open('http://localhost/ShoppingCart.html','_self');
+}
+</script>
+</head>
+
+<body>
+<br/>
+<div class="slideshow-container">
+	<div class="IndivSlides fade">
+		<img src="Images/slider1.png" style="width:100%; height:280px;">
+	</div>
+
+	<div class="IndivSlides fade">
+		<img src="Images/slider2.png" style="width:100%; height:280px;">
+	</div>
+
+	<div class="IndivSlides fade">
+		<img src="Images/slider3.png" style="width:100%; height:280px;">
+	</div>
+</div>
+<br>
+<div style="text-align:center">
+	<span class="dot"></span> 
+	<span class="dot"></span> 
+	<span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("IndivSlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" dotactive", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " dotactive";
+    setTimeout(showSlides, 4000); // Change image every 4 seconds
+}
+</script>
+<br/>
+<br/>
+<br/>
+
+<div class="row">
+  <div class="column">
+    <div class="content">
+	<a target="_blank" href="https://www.wellingtonnz.com/discover/shopping/blue-bell-club-all-things-pacifica/">
+      <img src="Images/positive.jpg" style="width:100%">
+	  </a>
+      <h3>News Featured</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content2">	
+	<a target="_blank" href="https://www.pataka.org.nz/gifted-cash-and-carry/">
+    <img src="Images/pataka.jpg"  style="width:100%">
+	</a>	
+      <h3>Museum Exhibits</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+    <div class="column">
+    <div class="content3">
+	<a target="_blank" href="https://www.eventfinda.co.nz/2018/pasifika-art-market/wellington-region?utm_campaign=were-you-looking-for-events&utm_medium=click-through&utm_source=2018%2Fmini-winter-fiesta-1%2Fwellington-region">
+    <img src="Images/event.jpg"  style="width:100%">
+	</a>
+      <h3>Events</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+  </div>
+
+<!--  Stay in Touch-->
+<div class="homecontainer">
+	<center><img src="Images/backgroundimg.png" style="width:100%;"></center>
+	<div class="homecontent">
+		<center><h1>Stay in Touch!</h1>
+		<input type="email" placeholder="Enter your email" name="Email" required>
+		<input class="button" type="submit" value="Subscribe" onclick="openSubscription()">	
+		</br></br>
+		<table>	
+		<tr class="IndProdRight">	
+				<td><a target="_blank" href="https://www.facebook.com/Blue-Bell-Club-1427527737474227/"><img src="Images/Facebook.png" height="25px;" width="30px"/></a></td>
+				<td><a target="_blank" href="https://www.instagram.com/bluebellclub/"><img src="Images/Instagram.png" height="25px;" width="30px"/></a> </td>		
+				<td><a href="mailto:test@gmail.com"><img src="Images/Email.png" height="25px;" width="30px"/></a></td>		
+		</tr>
+		</table>
+		</center>
+	</div>
+</div>
+<script>
+function openSubscription() {
+    window.open('http://localhost/Subscription.html','_self');
+}
+</script>
+
+
+
+<!--Footer of the Page -->
+<footer>
+<div class="Footer">
+<!-- Quick Links in Footer-->
+	<ul class="FooterLinks">
+		<li class="FooterTitle"><u>Quick Links</u></li> 
+		<li class="FooterList"><a target="_blank" href ="https://thecolourcloset.com/">Colour Closet</a></li> 
+		<li class="FooterFollow"><u>Follow Us</u></li> 		
+		<li class="FooterList"><a target="_blank" href="https://www.samsarthouse.co.nz/">Sam's Art House</a></li>
+		<li class="FooterListRight"><a href="mailto:test@gmail.com"><img src="Images/Email.png" height="25px;" width="35px"/></a> 
+		<li class="FooterListRight"><a target="_blank" href="https://www.instagram.com/bluebellclub/"><img src="Images/Instagram.png" height="25px;" width="30px"/></a></li> 
+		<li class="FooterListRight"><a target="_blank" href="https://www.facebook.com/Blue-Bell-Club-1427527737474227/"><img src="Images/Facebook.png" height="25px;" width="30px"/></a></li>
+		<li class="FooterList"><a href="Unsubscribe.html">Unsubscribe</a></li>
+		<li class="FooterList"><a href="TermsAndConditions.html">Terms & Conditions</a></li>
+	</ul>
+<!--Copyright details-->	
+	<div class="Copyright">
+		Copyright 2018
+	</div>
+<!--Bottom Banner--> 
+	<img class="Banner" src="Images/Banner.png"/>	
+</div>
+</footer>
+</body>
+</html>

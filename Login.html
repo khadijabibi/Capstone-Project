@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Stylesheet-->
+<link rel="styleSheet" type="text/css" href="StyleSheet.css">
+<!-- Top Banner-->
+<img class="Banner" src="Images/Banner.png"/>
+<!-- Company Logo-->	
+<div class="Header">
+	<img class="Logo" src="Images/Logo.png"  height="110px" width="150px"/><b><i>"All Things Pacifica"</i></b>
+</div>
+<!-- Navigation Bar-->
+<div class="navbar">
+	<div class="navbarleft">
+	  <a href="Home.html">Home</a>
+	  <a href="Products.html">Products</a>
+	  <a href="OurStory.html">Our Story</a>
+	  <a href="NewsRoom.html">News Room</a>
+	  <a href="Contact.html">Contact</a>
+	</div>
+	<div class="dropdown">
+		<button class="dropbtn"><img src="Images/Account.png" width="25" height="25" align="middle" /> Welcome, Guest!</button>
+		<div class="dropdown-content">
+		  <a href="Login.html" style="color: green;">Log In</a>
+		  <a href="Register.html">Register</a>
+		</div>
+	</div> 
+	<div class="Cartdropdown">
+		<button class="Cartdropbtn"><img src="Images/Cart.png" width="25" height="25" align="middle" /> 0 Items = $0.00</button>
+		<div class="Cartdropdown-content">
+			<a><img src="Images/Cushion.png"height="35px;" width="48px" />&nbsp; Strawberry Fair &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 X NZ$000.00 
+				<img src="Images/x.png"height="20px;" width="22px" />
+				<hr></hr>
+				<b>Subtotal: $000.00</b><button class= "button" onclick="myFunction()">Checkout</button>
+			</a>     
+		</div>
+	</div> 
+</div>
+<script>
+function myFunction() {
+    window.open('http://localhost/ShoppingCart.html','_self');
+}
+</script>
+</head>
+
+<body>
+<br/>
+
+<div class="MainLogin">
+<!--This div contains CSS information for the page background-->
+	<div >
+		<center><img class="flowerbackground" src="Images/flowerexample.png" height="200px" width="200px"/></center>
+	</div>
+<!--This div contains form border and size information-->
+	<div Style= "border: 3px solid black;">
+		
+			<h1 align="middle">Login</h1>
+			<img class="LoginLogo" src="Images/LoginLogo.png" height="140px" width="140px;"/>	
+<!--This div is in the middle and contains information for the user to log into their account-->
+		
+			<form action="MyAccount.html">
+				<table class="FormDetailsLogin">
+					<tr>
+						<td style="font-size: 13px;"><b>Email Address:<font color="red">*</font></b></td>
+						<td><input type="text" placeholder="Enter your email" name="Email" required></td>
+					</tr>
+					<tr>
+						<td style="font-size: 13px;"><b>Password:<font color="red">*</font></b></td>
+						<td><input type="password" placeholder="Enter your password" name="Password" required></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><button class= "button" >Login</button></td>
+					</tr>									
+				</table>
+			</form>
+		
+		
+	</div>
+	
+	<div >
+		<center><img class="flowerbackground2" src="Images/flowerexample2.png" height="200px" width="200px"/></center>
+	</div>
+</div>
+
+<!--Footer of the Page -->
+<footer>
+<div class="Footer">
+<!-- Quick Links in Footer-->
+	<ul class="FooterLinks">
+		<li class="FooterTitle"><u>Quick Links</u></li> 
+		<li class="FooterList"><a target="_blank" href ="https://thecolourcloset.com/">Colour Closet</a></li> 
+		<li class="FooterFollow"><u>Follow Us</u></li> 		
+		<li class="FooterList"><a target="_blank" href="https://www.samsarthouse.co.nz/">Sam's Art House</a></li>
+		<li class="FooterListRight"><a href="mailto:test@gmail.com"><img src="Images/Email.png" height="25px;" width="35px"/></a> 
+		<li class="FooterListRight"><a target="_blank" href="https://www.instagram.com/bluebellclub/"><img src="Images/Instagram.png" height="25px;" width="30px"/></a></li> 
+		<li class="FooterListRight"><a target="_blank" href="https://www.facebook.com/Blue-Bell-Club-1427527737474227/"><img src="Images/Facebook.png" height="25px;" width="30px"/></a></li>
+		<li class="FooterList"><a href="Unsubscribe.html">Unsubscribe</a></li>
+		<li class="FooterList"><a href="TermsAndConditions.html">Terms & Conditions</a></li>
+	</ul>
+<!--Copyright details-->	
+	<div class="Copyright">
+		Copyright 2018
+	</div>
+<!--Bottom Banner--> 
+	<img class="Banner" src="Images/Banner.png"/>	
+</div>
+</footer>
+</body>
+</html>

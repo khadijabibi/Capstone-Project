@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact</title>
+<!-- Stylesheet-->
+<link rel="styleSheet" type="text/css" href="StyleSheet.css">
+<!-- Top Banner-->
+<img class="Banner" src="Images/Banner.png"/>
+<!-- Company Logo-->	
+<div class="Header">
+	<img class="Logo" src="Images/Logo.png"  height="110px" width="150px"/><b><i>"All Things Pacifica"</i></b>
+</div>
+<!-- Navigation Bar-->
+<div class="navbar">
+	<div class="navbarleft">
+	  <a href="Home.html">Home</a>
+	  <a href="Products.html">Products</a>
+	  <a href="OurStory.html">Our Story</a>
+	  <a href="NewsRoom.html">News Room</a>
+	  <a href="Contact.html" class="navactive">Contact</a>
+	</div>
+	<div class="dropdown">
+		<button class="dropbtn"><img src="Images/Account.png" width="25" height="25" align="middle" /> Welcome, Penny!</button>
+		<div class="dropdown-content">
+		  <a href="MyAccount.html">My Account</a>
+		  <a href="OrderHistory.html">Order History</a>
+		  <a href="Home.html">Logout</a>
+		</div>
+	</div> 
+	<div class="Cartdropdown">
+		<button class="Cartdropbtn"><img src="Images/Cart.png" width="25" height="25" align="middle" /> 0 Items = $0.00</button>
+		<div class="Cartdropdown-content">
+			<a><img src="Images/Cushion.png"height="35px;" width="48px" />&nbsp; Strawberry Fair &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 X NZ$000.00 
+				<img src="Images/x.png"height="20px;" width="22px" />
+				<hr></hr>
+				<b>Subtotal: $000.00</b><button class= "button" onclick="myFunction()">Checkout</button>
+			</a>     
+		</div>
+	</div> 
+</div>
+<script>
+function myFunction() {
+    window.open('http://localhost/ShoppingCart.html','_self');
+}
+</script>
+</head>
+
+<body>
+<h1 align="middle">Contact</h1>
+<div class="MainContact">
+<!--This div is floating left-->
+	<div class="Contact-Left">
+		<table>
+			<tr>
+				<td>
+					<b>Email:</b> <a href="mailto:test@gmail.com">test@gmail.com</a>
+					<br/><br/><br/>
+					<b>Phone Number:</b> 021 976 5415
+					<br/><br/><br/>
+					<b>Physical Address:</b>
+					<br/>
+					74 XXXXX Street
+					<br/>
+					Porirua
+					<br/>
+					5024
+					<br/><br/><br/>
+					<b>Opening Hours:</b>
+					<br/>
+					Monday: XXAM - XXPM
+					<br/>
+					Tuesday: XXAM - XXPM
+				</td>
+			</tr>
+		</table>
+	</div>
+<!--This table contains the Google Map for the shop location-->
+	<div class="Contact-Right">
+		<table>
+			<tr>
+				<td>
+					<img src="Images/Map.png" height="400" width="700"/>
+					<br/>
+					<br/>
+					<!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.2914624624675!2d174.8410371590805!3d-41.13090530965295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d3f543ff2465eef%3A0x8fc89f68adb898f8!2sGet+Fixed+Bicycle+Caf%C3%A8.+Saving+the+planet+one+pedal+rotation+at+a+time+with+SWIFT+electric+bike+conversions!5e0!3m2!1sen!2snz!4v1538198334409" 
+					width="700" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+</div>
+
+
+
+<!--Footer of the Page -->
+<footer>
+<div class="Footer">
+<!-- Quick Links in Footer-->
+	<ul class="FooterLinks">
+		<li class="FooterTitle"><u>Quick Links</u></li> 
+		<li class="FooterList"><a target="_blank" href ="https://thecolourcloset.com/">Colour Closet</a></li> 
+		<li class="FooterFollow"><u>Follow Us</u></li> 		
+		<li class="FooterList"><a target="_blank" href="https://www.samsarthouse.co.nz/">Sam's Art House</a></li>
+		<li class="FooterListRight"><a href="mailto:test@gmail.com"><img src="Images/Email.png" height="25px;" width="35px"/></a> 
+		<li class="FooterListRight"><a target="_blank" href="https://www.instagram.com/bluebellclub/"><img src="Images/Instagram.png" height="25px;" width="30px"/></a></li> 
+		<li class="FooterListRight"><a target="_blank" href="https://www.facebook.com/Blue-Bell-Club-1427527737474227/"><img src="Images/Facebook.png" height="25px;" width="30px"/></a></li>
+		<li class="FooterList"><a href="Unsubscribe.html">Unsubscribe</a></li>
+		<li class="FooterList"><a href="TermsAndConditions.html">Terms & Conditions</a></li>
+	</ul>
+<!--Copyright details-->	
+	<div class="Copyright">
+		Copyright 2018
+	</div>
+<!--Bottom Banner--> 
+	<img class="Banner" src="Images/Banner.png"/>	
+</div>
+</footer>
+</body>
+</html>
